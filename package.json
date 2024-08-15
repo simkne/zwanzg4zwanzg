@@ -1,0 +1,47 @@
+{
+  "name": "zwanzg4zwanzg",
+  "version": "1.0.0",
+  "description": "twentytwentyfour clone WordPress theme with CSS/SASS and JavaScript compiled using webpack 5.",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simkne/zwanzg4zwanzg.git"
+  },
+  "author": "sortofme (https://noesi.net/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^12.3.0",
+    "particlesjs": "^2.2.3",
+    "wordpress": "^1.4.1"
+  },
+  "bugs": {
+    "url": "https://github.com/simkne/zwanzg4zwanzg/issues"
+  },
+  "homepage": "https://github.com/simkne/zwanzg4zwanzg#readme",
+  "keywords": [
+    "wp",
+    "twentytwentyfour",
+    "clone",
+    "theme",
+    "block-theme"
+  ]
+}
