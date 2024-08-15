@@ -3,7 +3,7 @@ const path = require('path');
 // css extraction and minification
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
+//const CopyPlugin = require("copy-webpack-plugin");
 
 // clean out build dir in-between builds
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -61,15 +61,16 @@ module.exports = [
       }), */
       // css extraction into dedicated file
       new MiniCssExtractPlugin({
-        filename: './assets/css/[name].min.css'
+        filename: './assets/css/[name].min.css?ver=1.1'
       }),
       //copy vendor files across as fallback
-     new CopyPlugin({
+    /*  new CopyPlugin({
         patterns: [
           { from: "./src/js/vendor/*", to: "./assets/js/vendor/[name][ext]" },
-       /*     { from: "./src/css/*", to: "./assets/css/[name][ext]" },    */      
+       /*     { from: "./src/css/*", to: "./assets/css/[name][ext]" },    */  /*    
         ],
-      }), 
+      }),  
+      */
     ],
     optimization: {
       // minification - only performed when mode = production

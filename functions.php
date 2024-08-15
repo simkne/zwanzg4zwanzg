@@ -8,6 +8,8 @@
  * @since zwanzgvierazwanzg 1.0
  */
 
+ require_once get_theme_file_path( "/inc/functions/theme-functions.php");
+
 /**
  * Register block styles.
  */
