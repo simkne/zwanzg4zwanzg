@@ -1,1 +1,36 @@
-.wp-block-cover.home-cover{border:1px solid red}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss ***!
+  \*************************************************************************************************************/
+.wp-block-cover.home-cover.nebelme {
+  border: 1px solid red;
+  overflow: hidden;
+  position: relative;
+}
+.wp-block-cover.home-cover.nebelme .fogme {
+  /*        width: 100vw;
+                 height: 100vh;
+                 position: absolute;
+                 display: flex;
+                 z-index: 20;
+                 pointer-events: none; */
+}
+.wp-block-cover.home-cover.nebelme .enter_button .wp-block-buttons {
+  position: absolute;
+  bottom: 3.3rem;
+}
+.wp-block-cover.home-cover.nebelme .wp-block-cover__inner-container {
+  z-index: 11;
+}
+.wp-block-cover.home-cover.parallaxme .wp-block-cover__image-background {
+  background-attachment: fixed !important;
+}
+
+header.main-head {
+  position: sticky;
+  top: 3rem;
+}
+
+.wp-block-cover,
+.wp-block-cover-image {
+  padding: 0;
+}

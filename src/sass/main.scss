@@ -1,7 +1,41 @@
-
-.wp-block-cover{
-
-    &.home-cover{
-        border: 1px solid red;
+.wp-block-cover {
+  &.home-cover {
+    &.nebelme {
+      border: 1px solid red;
+      overflow: hidden;
+      position: relative;
+      & .fogme {
+       // z-index: 7;
+        /*        width: 100vw;
+                       height: 100vh;
+                       position: absolute;
+                       display: flex;
+                       z-index: 20;
+                       pointer-events: none; */
+      }
+      & .enter_button .wp-block-buttons{
+        position: absolute;
+        bottom: 3.3rem;
+      }
+      & .wp-block-cover__inner-container{
+        z-index: 11;
+      }
     }
+    &.parallaxme{
+        & .wp-block-cover__image-background{
+        //    position: fixed !important;
+        background-attachment: fixed !important;
+        }
+    }
+  }
+}
+header.main-head{
+    position: sticky;
+    top: 3rem;
+}
+
+//wordpress blocks
+.wp-block-cover, 
+.wp-block-cover-image{
+    padding: 0;
 }
