@@ -45,7 +45,7 @@ class ImageHelper {
     // Regular expression to extract the URL
     const strstr = `${inputString}`;
     // const regex = /url$["']?(.*?)["']?$/;
-    const regex = /http?:\/\/[^\s]+/;
+    const regex = /https?:\/\/[^\s]+/;
 
     // Extracting the URL
     const match = inputString.match(regex);

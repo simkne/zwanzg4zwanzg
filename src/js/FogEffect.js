@@ -28,7 +28,7 @@
   });
   ****************************************************************/
 
-export class FogEffect {
+class FogEffect {
   constructor(container, options = {}) {
     this.container = container;
     this.fogs = [];
@@ -173,3 +173,5 @@ class Fog {
     this.element = null;
   }
 }
+// Export the class for use in other files
+export default FogEffect;
